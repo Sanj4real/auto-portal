@@ -1,0 +1,8 @@
+.category__det:hover:before {
+  background: linear-gradient(
+    0deg,
+    rgba(80, 101, 246, 0.6) 33.62%,
+    rgba(0, 0, 0, 0) 95.85%
+  );
+  @apply content-[""] absolute inset-0 w-full h-full rounded-full;
+}

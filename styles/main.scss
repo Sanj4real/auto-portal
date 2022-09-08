@@ -1,0 +1,64 @@
+// @import url("https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700&display=swap");
+
+html,
+body {
+  font-family: "Barlow", sans-serif;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Barlow", sans-serif;
+}
+
+ul {
+  li {
+    font-family: "Barlow", sans-serif;
+  }
+}
+
+.siteButton {
+  padding: 12px 24px;
+  border: 1px solid #5168f6;
+  color: #5168f6;
+  border-radius: 1.5rem;
+  height: auto;
+  font-size: 1rem;
+  transition: all 0.3s ease-in-out;
+  text-transform: capitalize;
+  &:hover {
+    background-color: #5168f6;
+    color: #fff;
+  }
+}
+.boxShadow {
+  box-shadow: 0 0 13px 0 rgb(125 125 125 / 10%);
+}
+
+// bootstrap-5 responsive
+@media (min-width: 576px) {
+  .container {
+    max-width: 540px;
+  }
+  @media (min-width: 768px) {
+    .container {
+      max-width: 720px;
+    }
+  }
+  @media (min-width: 992px) {
+    .container {
+      max-width: 960px;
+    }
+  }
+  @media (min-width: 1200px) {
+    .container {
+      max-width: 1220px;
+    }
+  }
+  @media (min-width: 1400px) {
+    .container {
+      max-width: 1320px;
+    }
+  }
+}

@@ -1,0 +1,3 @@
+.jumbotron h3 {
+  @apply text-3xl mb-2.5 leading-9;
+}

@@ -1,0 +1,45 @@
+.buy_sell:before,
+.buy_sell:after {
+  @apply absolute bg-primary content-[''] h-full top-0;
+}
+.buy_sell:before {
+  @apply left-0 right-1/2;
+}
+.buy_sell:after {
+  @apply bg-warning-400 right-0 left-1/2;
+}
+.buy_selldet > div:first-child {
+  @apply lg:mr-52 xl:mr-60;
+}
+.buy_selldet > div:last-child {
+  @apply lg:ml-52 xl:ml-60;
+}
+.buy_selldet > div h3 {
+  @apply text-xl font-medium mb-3;
+}
+.buy_selldet > div h3 b,
+.buy_selldet > div h3 strong {
+  @apply block font-semibold;
+}
+.buy_selldet > div p:not(:last-child) {
+  @apply mb-4;
+}
+.buy_selldet > div .buy_selldetbtn {
+  @apply inline-block px-4 py-2 rounded-md text-sm;
+}
+@media (max-width: 1023px) {
+  .buy_sell:before,
+  .buy_sell:after {
+    @apply content-[none];
+  }
+  .buy_selldet > div:first-child,
+  .buy_selldet > div:last-child {
+    @apply mx-0 px-10;
+  }
+  .buy_selldet > div:nth-of-type(odd) {
+    @apply bg-primary;
+  }
+  .buy_selldet > div:nth-of-type(even) {
+    @apply bg-warning-400;
+  }
+}
